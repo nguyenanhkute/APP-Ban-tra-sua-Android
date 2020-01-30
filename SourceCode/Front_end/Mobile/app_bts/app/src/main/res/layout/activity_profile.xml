@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.app_banhang.activity.ProfileActivity">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/ly_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <ImageView
+            android:src="@drawable/ic_name"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/edtTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/font_size_medium"
+            android:hint="Họ tên"
+            android:inputType="text" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ly_user"
+        android:id="@+id/ly_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <ImageView
+            android:src="@drawable/ic_email"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+        <EditText
+            android:id="@+id/edtTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/font_size_medium"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ly_email"
+        android:id="@+id/ly_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <ImageView
+            android:src="@drawable/ic_phone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+        <EditText
+            android:id="@+id/edtTextNumberPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/font_size_medium"
+            android:hint="Số điện thoại"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/ly_address"
+        android:layout_below="@+id/ly_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <ImageView
+            android:src="@drawable/ic_address"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/edtTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/font_size_medium"
+            android:hint="Địa chỉ" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/ly_password"
+        android:layout_below="@+id/ly_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <ImageView
+            android:src="@drawable/ic_password"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <EditText
+            android:focusableInTouchMode="false"
+            android:id="@+id/tv_changepassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/font_size_medium"
+            android:fontFamily="sans-serif"
+            android:gravity="center|left"
+            android:textColor="@color/black"
+            android:hint="Thay đổi mật khẩu"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/ly_lsmh"
+        android:layout_below="@+id/ly_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <ImageView
+            android:src="@drawable/ic_history"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <EditText
+            android:focusableInTouchMode="false"
+            android:id="@+id/tv_lsmh"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/font_size_medium"
+            android:fontFamily="sans-serif"
+            android:gravity="center|left"
+            android:textColor="@color/black"
+            android:hint="Xem lịch sử mua hàng"
+            />
+    </LinearLayout>
+
+    <Button
+        android:background="@drawable/button"
+        android:id="@+id/btnLogout"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_below="@+id/ly_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng xuất"
+        ></Button>
+</LinearLayout>

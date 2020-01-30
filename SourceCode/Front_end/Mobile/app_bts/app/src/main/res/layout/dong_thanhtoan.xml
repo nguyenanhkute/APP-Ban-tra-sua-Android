@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:id="@+id/imageviewgiohang"
+            android:adjustViewBounds="true"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/textviewtengiohang"
+            android:text="Tên món hàng"
+            android:textSize="16dp"
+            android:textColor="@color/blue"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/textviewtengiohang"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:textSize="14dp"
+            android:textColor="#f20"
+            android:id="@+id/textviewgiatrimonhang"
+            android:text="Giá tri món hàng"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/textviewtengiohang"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/grown"
+            android:id="@+id/textviewsoluong"
+            android:text="Số lượng"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

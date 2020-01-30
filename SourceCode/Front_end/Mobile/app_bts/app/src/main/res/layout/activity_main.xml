@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        //TOOLBAR
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarmanhinhchinh"
+            android:background="#00BCD4"
+            app:title="NATA Tea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.appcompat.widget.Toolbar>
+        //Searchinggggggg
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        //viewflipper
+        <ViewFlipper
+            android:id="@+id/idviewflipper"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+        </ViewFlipper>
+
+        //layout tong
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            //linearayout loai san pham
+            <LinearLayout
+                android:layout_weight="1.3"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                //text
+                <TextView
+                    android:layout_gravity="top|left"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    android:layout_margin="9dp"
+                    android:text="LOẠI SẢN PHẨM "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                //  recycler
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/idrecyclerlsp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scrollbars="horizontal"></androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+            // listview sanpham
+            <LinearLayout
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                //text
+                <TextView
+                    android:layout_gravity="top|left"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    android:layout_margin="9dp"
+                    android:text="SẢN PHẨM "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                //  recycler
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/idrecyclersp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:background="@color/primary_blue"
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"
+        app:itemIconTint="@color/gray"
+        app:itemTextColor="@color/gray">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

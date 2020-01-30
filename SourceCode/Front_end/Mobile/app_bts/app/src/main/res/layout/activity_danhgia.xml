@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="ÐÁNH GIÁ SẢN PHẨM"
+        android:textColor="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:hint="Nhập đánh giá của bạn (500 ký tự)"
+        android:id="@+id/edt_danhgia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/imageviewdanhgiasp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="10dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+        <Button
+            android:text="Tải ảnh"
+            android:id="@+id/buttonupload"
+            android:background="@drawable/button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginRight="20dp"
+            android:text="Hủy"
+            android:id="@+id/buttonhuy"
+            android:background="@drawable/button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="Lưu"
+            android:id="@+id/buttondongy"
+            android:background="@drawable/button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>
